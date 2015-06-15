@@ -21,7 +21,7 @@ AM_VALAFLAGS = \
 	--vapidir $(top_srcdir)/sim \
 	$(NULL)
 
-LIBS=$(OORT_LIBS) -lm
+LIBS=$(OORT_LIBS) -lm -ldl
 
 bin_PROGRAMS = oort_dedicated
 oort_dedicated_SOURCES = oort-dedicated.vala
